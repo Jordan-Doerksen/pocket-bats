@@ -1,0 +1,58 @@
+/* night.tokens.css — the only file that may define a colour or a type value.
+   Site skin: "Night-sky cozy" (D4). site.css consumes these; it defines none. */
+
+:root {
+  /* ground */
+  --night-950: #070b1d;
+  --night-900: #0b1026;
+  --night-800: #131a3a;
+  --night-700: #1d2650;
+  --night-line: #2a3462;
+
+  /* light */
+  --moon: #f5d99a;
+  --moon-bright: #ffe9b8;
+  --moon-deep: #d9b46a;
+  --star: #cdd6f4;
+
+  /* sonar (Echo ping accent) */
+  --echo: #9adcf0;
+  --echo-dim: #5aa8c4;
+
+  /* text */
+  --text: #eaedf8;
+  --text-dim: #aab2ce;
+  --text-faint: #7e87a8;
+
+  /* bat */
+  --bat-body: #3d3554;
+  --bat-wing: #2c2640;
+  --bat-ear: #f0a8b8;
+  --bat-cheek: #e88fa4;
+
+  /* type */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --size-display: clamp(2.6rem, 11vw, 4.6rem);
+  --size-h2: clamp(1.5rem, 6vw, 2.2rem);
+  --size-body: 1.0625rem;
+  --size-small: 0.875rem;
+  --size-label: 0.75rem;
+  --leading-body: 1.65;
+  --leading-tight: 1.08;
+  --track-label: 0.14em;
+
+  /* space & shape */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.75rem;
+  --space-4: 3rem;
+  --space-5: 5.5rem;
+  --measure: 34rem;
+  --radius: 1.25rem;
+  --radius-pill: 999px;
+
+  /* motion (durations only; site.css decides what moves) */
+  --t-fast: 140ms;
+  --t-slow: 420ms;
+  --ease: cubic-bezier(0.22, 0.9, 0.3, 1);
+}
