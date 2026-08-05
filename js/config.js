@@ -17,6 +17,18 @@ window.POCKET_BATS_CONFIG = {
     hitFlashMs: 260,
     missFlashMs: 200
   },
+  roostRest: {
+    roundSeconds: 75,        // time until sunrise
+    batCount: 5,             // sleepy bats to hang up
+    spotCount: 7,            // roost spots on the ceiling
+    flySpeed: 9,             // drift speed of a flying bat, design units/s scale
+    flyWander: 0.5,          // direction change, 0..1
+    grabRadius: 70,          // how close a finger must be to pick a bat up
+    snapRadius: 110,         // how close a drop must be to a spot to roost
+    dawnWarnSeconds: 12,     // the sky starts to turn this early
+    zzzDelaySeconds: 2,      // a roosted bat starts snoring after this
+    batSize: 30
+  },
   motion: {
     pauseOffscreen: true     // pause character motion when its section is not visible
   }
