@@ -45,5 +45,18 @@ window.POCKET_BATS_CONFIG = {
   },
   motion: {
     pauseOffscreen: true     // pause character motion when its section is not visible
+  },
+  atmosphere: {
+    parallaxFar: -0.045,     // far star layer, px moved per px scrolled (negative = slower)
+    parallaxGlow: 0.06,      // aurora layer drift with scroll
+    revealShift: 20,         // px a section child rises while settling in
+    revealStaggerMs: 70,     // delay between siblings of one section
+    /* Little bats that fly in once and roost on a heading. left = where on the
+       heading's width the feet grab; size in px. They land and then stay put. */
+    roosters: [
+      { anchor: "#promise .display", left: "83%", size: 26 },
+      { anchor: "#facts h2",          left: "72%", size: 22 },
+      { anchor: "#help h2",           left: "64%", size: 22 }
+    ]
   }
 };
