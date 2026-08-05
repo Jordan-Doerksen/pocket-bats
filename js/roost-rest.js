@@ -108,7 +108,10 @@
       var d = Math.hypot(b.x - u.x, b.y - u.y);
       if (d < bd) { bd = d; best = b; }
     });
-    if (best && bd < CFG.grabRadius) { dragged = best; best.state = "drag"; shell.setPointerCapture(e.pointerId); }
+    if (best && bd < CFG.grabRadius) {
+      dragged = best; best.state = "drag";
+      try { shell.setPointerCapture(e.pointerId); } catch (err) { /* capture is optional */ }
+    }
   });
   shell.addEventListener("pointermove", function (e) {
     if (!dragged) return;

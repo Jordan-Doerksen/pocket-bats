@@ -29,6 +29,20 @@ window.POCKET_BATS_CONFIG = {
     zzzDelaySeconds: 2,      // a roosted bat starts snoring after this
     batSize: 30
   },
+  mothChase: {
+    batSpeed: 620,           // how fast the bat follows the thumb, design units/s
+    mothSpeed: 90,           // moth drift
+    mothSpawnSeconds: 0.9,   // one new moth this often
+    maxMoths: 7,
+    owlAfterSeconds: 12,     // the owl arrives once the night is under way
+    owlSpeed: 150,           // slower than the bat, but it never stops
+    owlTurn: 1.5,            // how sharply the owl corrects, higher = harder
+    owlGraceSeconds: 2.2,    // invulnerable after a hit
+    catchRadius: 40,
+    owlRadius: 52,
+    lives: 3,
+    batSize: 30
+  },
   motion: {
     pauseOffscreen: true     // pause character motion when its section is not visible
   }

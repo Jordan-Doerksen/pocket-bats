@@ -92,3 +92,4 @@ use STE.
 - 2026-08-04 — OG/share image added (design/og.html rendered to og.png by headless Chrome). Open question closed.
 - 2026-08-04 — Chunk 2 shipped: Roost & rest (drag to roost before sunrise, keyboard-complete). Coming index down to Moth chase.
 - 2026-08-04 — Field notes added before each game (four notes per game, definition list, no cards). Owner asked for more real information ahead of play.
+- 2026-08-04 — Chunk 3 shipped: Moth chase (thumb-steer catcher, owl pursuer, 3 lives) with its own field notes. New closing section "If you like them" (white-nose syndrome, roost/light/yard guidance) replaces the coming-soon index; its dead CSS removed. setPointerCapture guarded in both drag games. All three games now exist; card_policy game-rack option remains unused because each game keeps its own narrative section.
