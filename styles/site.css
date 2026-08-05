@@ -164,6 +164,32 @@ p { margin: 0 0 var(--space-2); }
 /* ---- 3. play ---- */
 .play .intro { color: var(--text-dim); }
 
+/* Field notes: the reading that earns the game. A definition list, not cards. */
+.notes { margin: var(--space-3) 0 var(--space-2); }
+.notes > div {
+  border-top: 1px solid var(--night-line);
+  padding: var(--space-2) 0;
+}
+.notes dt {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--moon);
+  margin-bottom: 0.35rem;
+}
+.notes dd {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: var(--size-small);
+  line-height: 1.6;
+}
+.try {
+  border-top: 1px solid var(--night-line);
+  padding-top: var(--space-2);
+  color: var(--echo);
+  font-size: var(--size-small);
+  letter-spacing: 0.01em;
+}
+
 .game-frame {
   margin: var(--space-3) calc(var(--space-2) * -1);
 }
@@ -242,6 +268,8 @@ p { margin: 0 0 var(--space-2); }
   .game-shell { aspect-ratio: 4 / 3; }
   .fact { display: grid; grid-template-columns: 10.5rem 1fr; gap: var(--space-2); align-items: start; }
   .figure { overflow-wrap: break-word; }
+  .notes > div { display: grid; grid-template-columns: 12rem 1fr; gap: var(--space-2); align-items: start; }
+  .notes dt { margin-bottom: 0; }
   .figure { margin-bottom: 0; }
 }
 
