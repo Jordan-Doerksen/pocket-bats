@@ -88,6 +88,42 @@
     '<circle class="r-eye" cx="35" cy="52" r="1.8"/>' +
     "</svg>";
 
+  /* ---- the family roost: everyone comes home to the branch at the end ---- */
+  var footer = document.querySelector("footer.close");
+  if (footer && CFG.family && CFG.family.length) {
+    var fam = document.createElement("div");
+    fam.className = "family";
+    fam.setAttribute("aria-hidden", "true");
+    fam.innerHTML =
+      '<svg class="branch" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true">' +
+      '<path d="M0 14 Q 300 34 600 10"/></svg>';
+    footer.insertBefore(fam, footer.firstChild);
+
+    var perches = CFG.family.map(function (spec) {
+      var perch = document.createElement("span");
+      perch.className = "rooster" + (spec.from === "right" ? " from-right" : "");
+      perch.style.left = spec.left;
+      perch.style.top = spec.top + "px";
+      perch.style.fontSize = spec.size + "px";
+      perch.innerHTML = ROOST_SVG;
+      fam.appendChild(perch);
+      if (!reducedMotion) perch.classList.add("waiting");
+      return perch;
+    });
+
+    if (!reducedMotion) {
+      var famOnce = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        perches.forEach(function (perch, i) {
+          perch.style.animationDelay = CFG.family[i].delayMs + "ms";
+          perch.classList.add("arrive");
+        });
+        famOnce.disconnect();
+      }, { threshold: 0.4 });
+      famOnce.observe(fam);
+    }
+  }
+
   CFG.roosters.forEach(function (spec) {
     var heading = document.querySelector(spec.anchor);
     if (!heading) return;

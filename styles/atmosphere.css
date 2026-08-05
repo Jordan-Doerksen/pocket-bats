@@ -101,6 +101,38 @@
   100% { transform: none; }
 }
 
+/* The family branch: a perch above the colophon where the whole household turns in. */
+.family {
+  position: relative;
+  height: 110px;
+  max-width: 22rem;
+  margin: 0 auto var(--space-3);
+}
+.family .branch {
+  position: absolute;
+  inset: 0 0 auto 0;
+  width: 100%;
+  height: 40px;
+}
+.family .branch path {
+  fill: none;
+  stroke: var(--night-line);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.family .rooster { pointer-events: none; }
+
+/* Mirrored approach for bats that come in from the right. */
+.rooster.from-right.waiting { transform: translate(30vw, -20vh) rotate(-22deg); }
+.rooster.from-right.arrive { animation-name: rooster-arrive-right; }
+@keyframes rooster-arrive-right {
+  0%   { transform: translate(30vw, -20vh) rotate(-22deg); }
+  60%  { transform: translate(0.5em, 0.35em) rotate(6deg); }
+  82%  { transform: translate(-0.08em, 0.06em) rotate(2deg); }
+  94%  { transform: translate(0.02em, -0.01em) rotate(-1deg); }
+  100% { transform: none; }
+}
+
 /* Twinkle: a few stars breathe very slowly. Owner-approved exception (CR-1) to the
    no-ambient-loops rule; opacity only, and gone entirely under reduced motion. */
 .twinkle {

@@ -56,8 +56,16 @@ window.POCKET_BATS_CONFIG = {
        heading's width the feet grab; size in px. They land and then stay put. */
     roosters: [
       { anchor: "#promise .display", left: "83%", size: 26 },
-      { anchor: "#facts h2",          left: "72%", size: 22 },
-      { anchor: "#help h2",           left: "64%", size: 22 }
+      { anchor: "#facts h2",          left: "72%", size: 22 }
+    ],
+    /* The family that roosts together on the branch above the colophon.
+       top follows the branch curve; delayMs staggers the landings; the pup lands last. */
+    family: [
+      { left: "14%", top: 13, size: 24, from: "left",  delayMs: 0 },
+      { left: "32%", top: 17, size: 30, from: "right", delayMs: 550 },
+      { left: "68%", top: 15, size: 28, from: "left",  delayMs: 1100 },
+      { left: "84%", top: 11, size: 22, from: "right", delayMs: 1650 },
+      { left: "50%", top: 17, size: 16, from: "left",  delayMs: 2600 }
     ]
   }
 };
