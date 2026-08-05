@@ -91,3 +91,4 @@ use STE.
 - 2026-08-04 — V1 approved by owner. Desktop fact-column overlap fixed. Display type moved to an editorial serif. GitHub repo created, Pages ON, live at https://jordan-doerksen.github.io/pocket-bats/ (D5 executed).
 - 2026-08-04 — OG/share image added (design/og.html rendered to og.png by headless Chrome). Open question closed.
 - 2026-08-04 — Chunk 2 shipped: Roost & rest (drag to roost before sunrise, keyboard-complete). Coming index down to Moth chase.
+- 2026-08-04 — Field notes added before each game (four notes per game, definition list, no cards). Owner asked for more real information ahead of play.
