@@ -88,3 +88,4 @@ use STE.
 ## Change Log
 
 - 2026-08-04 — Repo created. D1–D7 locked by owner interview.
+- 2026-08-04 — V1 approved by owner. Desktop fact-column overlap fixed. Display type moved to an editorial serif. GitHub repo created, Pages ON, live at https://jordan-doerksen.github.io/pocket-bats/ (D5 executed).
