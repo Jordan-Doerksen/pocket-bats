@@ -72,12 +72,13 @@ main, .chrome, .close { position: relative; z-index: 1; }
 }
 
 h2 {
+  font-family: var(--font-display);
   font-size: var(--size-h2);
   line-height: 1.15;
   margin: 0 0 var(--space-3);
   color: var(--moon-bright);
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 p { margin: 0 0 var(--space-2); }
@@ -94,10 +95,11 @@ p { margin: 0 0 var(--space-2); }
 }
 
 .display {
+  font-family: var(--font-display);
   font-size: var(--size-display);
   line-height: var(--leading-tight);
-  letter-spacing: -0.03em;
-  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-weight: 500;
   margin: 0 0 var(--space-2);
   color: var(--moon-bright);
 }
@@ -110,14 +112,14 @@ p { margin: 0 0 var(--space-2); }
 
 .bat {
   display: block;
-  width: min(78%, 20rem);
+  width: min(58%, 15rem);
   margin: var(--space-3) auto var(--space-2);
   overflow: visible;
 }
 .bat .body  { fill: var(--bat-body); }
 .bat .wing  { fill: var(--bat-wing); }
 .bat .ear   { fill: var(--bat-ear); }
-.bat .cheek { fill: var(--bat-cheek); opacity: 0.55; }
+.bat .cheek { fill: var(--bat-cheek); opacity: 0.28; }
 .bat .eye   { fill: var(--moon-bright); }
 .bat .mouth { fill: none; stroke: var(--night-950); stroke-width: 2; stroke-linecap: round; }
 .bat-wings  { transform-origin: 120px 66px; animation: flap 3.6s var(--ease) infinite; }
@@ -149,6 +151,7 @@ p { margin: 0 0 var(--space-2); }
   margin-bottom: var(--space-3);
 }
 .wrong {
+  font-family: var(--font-display);
   font-size: 1.35rem;
   color: var(--text-faint);
   text-decoration: line-through;
@@ -198,10 +201,11 @@ p { margin: 0 0 var(--space-2); }
   margin-bottom: var(--space-3);
 }
 .figure {
-  font-size: 2.1rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
   line-height: 1.1;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 500;
+  letter-spacing: 0;
   color: var(--moon);
   margin-bottom: var(--space-1);
 }
@@ -217,7 +221,7 @@ p { margin: 0 0 var(--space-2); }
   border-top: 1px solid var(--night-line);
   padding: var(--space-2) 0;
 }
-.idx-name { font-size: 1.25rem; color: var(--text-dim); }
+.idx-name { font-family: var(--font-display); font-size: 1.25rem; color: var(--text-dim); }
 .idx-note { font-size: var(--size-small); color: var(--text-faint); }
 .note { font-size: var(--size-small); color: var(--text-faint); }
 
@@ -236,7 +240,8 @@ p { margin: 0 0 var(--space-2); }
 @media (min-width: 46rem) {
   :root { --measure: 42rem; }
   .game-shell { aspect-ratio: 4 / 3; }
-  .fact { display: grid; grid-template-columns: 9rem 1fr; gap: var(--space-2); align-items: start; }
+  .fact { display: grid; grid-template-columns: 10.5rem 1fr; gap: var(--space-2); align-items: start; }
+  .figure { overflow-wrap: break-word; }
   .figure { margin-bottom: 0; }
 }
 

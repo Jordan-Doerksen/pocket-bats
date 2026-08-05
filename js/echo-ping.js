@@ -243,7 +243,7 @@
   function drawPanel() {
     ctx.textAlign = "center";
     ctx.fillStyle = C.moonBright;
-    ctx.font = "700 52px " + tok("--font", "system-ui");
+    ctx.font = "500 50px " + tok("--font-display", "Georgia, serif");
     if (mode === "intro") {
       ctx.fillText("The dark is not empty.", W / 2, H * 0.4);
       ctx.fillStyle = C.dim;
