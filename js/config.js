@@ -51,6 +51,7 @@ window.POCKET_BATS_CONFIG = {
     parallaxGlow: 0.06,      // aurora layer drift with scroll
     revealShift: 20,         // px a section child rises while settling in
     revealStaggerMs: 70,     // delay between siblings of one section
+    twinkleCount: 10,        // stars that breathe (CR-1); keep this number small
     /* Little bats that fly in once and roost on a heading. left = where on the
        heading's width the feet grab; size in px. They land and then stay put. */
     roosters: [

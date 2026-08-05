@@ -22,6 +22,21 @@
   document.body.insertBefore(far, glow.nextSibling);
   document.body.insertBefore(moon, far.nextSibling);
 
+  /* ---- twinkle: a few breathing stars (CR-1) ---- */
+  for (var i = 0; i < CFG.twinkleCount; i++) {
+    var tw = document.createElement("div");
+    tw.className = "twinkle";
+    tw.setAttribute("aria-hidden", "true");
+    var sz = (1 + Math.random() * 1.6).toFixed(1);
+    tw.style.width = sz + "px";
+    tw.style.height = sz + "px";
+    tw.style.left = (Math.random() * 100).toFixed(1) + "%";
+    tw.style.top = (Math.random() * 100).toFixed(1) + "%";
+    tw.style.animationDelay = (-Math.random() * 6).toFixed(1) + "s";
+    tw.style.animationDuration = (4 + Math.random() * 4).toFixed(1) + "s";
+    document.body.insertBefore(tw, moon.nextSibling);
+  }
+
   /* ---- parallax: moves only while the reader scrolls ---- */
   if (!reducedMotion) {
     var ticking = false;

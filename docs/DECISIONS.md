@@ -93,3 +93,4 @@ use STE.
 - 2026-08-04 — Chunk 2 shipped: Roost & rest (drag to roost before sunrise, keyboard-complete). Coming index down to Moth chase.
 - 2026-08-04 — Field notes added before each game (four notes per game, definition list, no cards). Owner asked for more real information ahead of play.
 - 2026-08-04 — Chunk 3 shipped: Moth chase (thumb-steer catcher, owl pursuer, 3 lives) with its own field notes. New closing section "If you like them" (white-nose syndrome, roost/light/yard guidance) replaces the coming-soon index; its dead CSS removed. setPointerCapture guarded in both drag games. All three games now exist; card_policy game-rack option remains unused because each game keeps its own narrative section.
+- 2026-08-04 — CR-1 (owner approved): ambient star twinkle is an exception to the no-ambient-loops non-negotiable. Ten stars, opacity only, static under reduced motion. Rooster fly-in slowed to 2.6 s with a glide-and-brake curve.
