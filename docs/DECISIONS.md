@@ -11,7 +11,7 @@ One phone-first page that makes a reader like bats, through short true facts and
 ## Non-Negotiable Constraints
 
 These constraints come from the Award-Winning Web UI/UX Style Bible
-(`C:\projects\award-winning-web-ui-ux-style-bible`), which is LAW for this page.
+(`C:\projects\reference\award-winning-web-ui-ux-style-bible`), which is LAW for this page.
 
 - One dominant idea per viewport. The centre is a stage.
 - Maximum 3 persistent clusters. This site uses 1: the identity wordmark.
